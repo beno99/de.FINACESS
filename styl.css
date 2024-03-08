@@ -1,0 +1,232 @@
+
+*{
+ font-family: "Roboto", sans-serif;
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ }
+ body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(42, 46, 44);
+    color: #fff;
+ }
+ .bb{
+    text-align: center;
+    background-color: rgb(89, 150, 91);
+    height: 150px;
+    width: 100vw;
+    padding: 3rem 0 10rem;
+    position: absolute;
+    z-index: 1;
+  
+}
+
+section{
+    width: 1000px;
+    text-align:start;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 2;
+    top: 10rem;
+}
+#entradas{
+    height: 150px;
+    width: 300px;
+    background-color: rgb(73, 83, 75);
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+    color: #fff;
+    
+}
+h4{
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+}
+h2{
+    font-weight: normal;
+    line-height: 2rem;
+    margin-top: 1rem;
+}
+#saidas{
+    height: 150px;
+    width: 300px;
+    background-color: rgb(73, 83, 75);
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+    color: #fff;
+    
+}
+
+#total{
+    height: 150px;
+    width: 300px;
+    background-color: rgb(73, 83, 75);
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+    color: #fff;
+}
+.novat{ 
+   position: absolute;
+   top: 350px;
+   display: inline-block;
+   margin-bottom: 0.8rem;
+   cursor: pointer;
+   color: #107c1e;
+   transition: 0.3s;
+   right: 73rem;
+}
+.novat :hover {
+    text-decoration: none;
+    color: rgb(151, 246, 167);
+}
+
+#conteiner-table{
+    position: relative;
+    top: 400px;
+    width: 65%;
+    border-spacing: 0.2rem 0.5rem;
+    color: #fff;
+    border-radius: 10px;
+}
+table thead tr th:first-child,
+table tbody tr td:first-child {
+  border-radius: 5.25rem 0 0 5.25rem;
+}
+
+table thead tr th:last-child,
+table tbody tr td:last-child{
+    border-radius: 0 5.25rem 5.25rem 0;
+}
+
+table th {
+    background-color: rgb(157, 154, 150);
+    padding: 0.5rem 2rem;
+    text-align: left;
+    
+}
+
+footer{
+    position: relative;
+    top: 600px;
+    color: rgb(157, 154, 150);
+}
+
+#fady{
+    position: fixed;
+    top:0 ;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(65, 63, 63, 0.657);
+   z-index: 5;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   
+}
+#modal{
+
+    background-color: rgb(77, 79, 79);
+    border-radius: 20px;
+}
+.sobre{
+    max-width: 500px;
+    padding: 2.4rem;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre h2 {
+    font-size: 30px;
+    text-align: start;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.imput-sectio{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #ffffff;
+}
+.imput-sectio input {
+    width: 100%;
+    height: 100%;
+    background-color:#c3b9b9 ;
+    border: none;
+    outline:none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #000000;
+    padding: 5px 0px 5px 20px;
+}
+
+#card-date-bt{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 55px;
+    font-size: 16px;
+}
+
+#card-date-bt input{
+    width: 100%;
+    height: 100%;
+    background-color:#c3b9b9 ;
+    border: none;
+    outline:none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #000000;
+    padding: 5px 15px 5px 20px;
+   
+}
+#buton{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between; 
+    width: 100%;
+    height: 45px;
+    margin: 0 auto;
+    border: none;
+    outline:none;
+}
+#cancelar-bnt{
+ border-color: rgba(255, 0, 0, 0.476);   
+ width: 40%;
+ height: 45px;
+ margin-top: 20px;
+ border-radius: 20px;
+ background: transparent;
+ color: rgba(255, 0, 0, 0.476);
+ font-size: 16px;
+ cursor: pointer;
+}
+#cancelar-bnt:hover{
+    text-decoration: none;
+    border-color: #ff0404;
+    color: #ff0000;
+}
+#salvar-bnt{
+ background-color: #107c1e97;
+ width: 40%;
+ height: 45px;
+ margin-top: 20px;
+ border-radius: 20px;
+ color:#fff;
+ font-size: 16px;
+ cursor: pointer;
+ border: none;
+ outline:none;
+}
+#salvar-bnt:hover{
+    text-decoration: none;
+    background-color: #09b620;
+}

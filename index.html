@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styl.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <script src="./finances.js" defer></script> 
+   <title>Document</title>
+</head>
+<body>
+    <div class="bb">
+        <h1>Dev.Finaces</h1>
+    </div>
+    
+        <section>
+            <div id="entradas">
+                <h4>
+                    <samp>entradas</samp>
+                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: msFilter"><path d="M12.001 1.993C6.486 1.994 2 6.48 2 11.994c.001 5.514 4.487 10 10 10 5.515 0 10.001-4.486 10.001-10s-4.486-10-10-10.001zM12 19.994c-4.41 0-7.999-3.589-8-8 0-4.411 3.589-8 8.001-8.001 4.411.001 8 3.59 8 8.001s-3.589 8-8.001 8z"></path><path d="m12.001 8.001-4.005 4.005h3.005V16h2v-3.994h3.004z"></path></svg>
+                </h4>
+                <h2>R$ 0,00</h2>
+            </div>
+            <div id="saidas">
+                <h4>
+                    <span>saidas</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: msFilter"><path d="M12 1.993C6.486 1.994 2 6.48 2 11.994c0 5.513 4.486 9.999 10 10 5.514 0 10-4.486 10-10s-4.485-10-10-10.001zm0 18.001c-4.411-.001-8-3.59-8-8 0-4.411 3.589-8 8-8.001 4.411.001 8 3.59 8 8.001s-3.589 8-8 8z"></path><path d="M13 8h-2v4H7.991l4.005 4.005L16 12h-3z"></path></svg>
+                </h4>
+                <h2>R$ 0,00</h2>
+            </div>
+            <div id="total">
+                <h4>
+                    <samp>total</samp>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: msFilter"><path d="M12 15c-1.84 0-2-.86-2-1H8c0 .92.66 2.55 3 2.92V18h2v-1.08c2-.34 3-1.63 3-2.92 0-1.12-.52-3-4-3-2 0-2-.63-2-1s.7-1 2-1 1.39.64 1.4 1h2A3 3 0 0 0 13 7.12V6h-2v1.09C9 7.42 8 8.71 8 10c0 1.12.52 3 4 3 2 0 2 .68 2 1s-.62 1-2 1z"></path><path d="M5 2H2v2h2v17a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4h2V2H5zm13 18H6V4h12z"></path></svg>
+                </h4>
+                <h2>R$ 0,00</h2>
+            </div>
+        </section>
+        <div class="novat">
+            <a id="opem-modal">
+                <samp>+ nova transaçao</samp>
+            </a>    
+        </div>
+        <dialog>
+            <div id="fady" ><div id="modal">
+                <div class="sobre">
+                    <h2>nova transaçao</h2>
+                    <form action="">
+                        <div class="imput-sectio">
+                            <label for="descriçao" id="desc-label"></label><input type="text" id="desc-input" name="desc-inp" placeholder="Descriçao">
+                            <label for="descriçao" id="desc-label"></label><input type="number" id="desc-inpu-numbert" name="desc-inpt" placeholder="0,00" step="0.01">
+                            <small>use o sinal -(negativo) para despessas e ,(vírgula) pra casas deimais</small>
+                        </div>
+                        
+                        <div id="card-date-bt">
+                            <label for="descriçao" id="desc-label"></label><input type="date" id="date" name="date">
+                            <div id="buton">
+                                <button id="cancelar-bnt">cancelar</button>
+                                <button id="salvar-bnt">salvar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div></div>
+        </dialog>
+        
+
+            <table id="conteiner-table">
+                <thead>
+                  <tr>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                    <th>Data</th>
+                    <th></th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  
+                </tbody>
+            </table>
+
+
+    <footer><p>@dev.finaces</p></footer>
+</body>
+</html>
